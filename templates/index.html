@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Lior Rosenberg's Site</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="static/assets/js/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="static/assets/css/main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="static/assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="static/assets/css/ie8.css" /><![endif]-->
+		<noscript><link rel="stylesheet" href="static/assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-loading">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<section id="main">
+						<header>
+							<span class="avatar"><img src="static/images/avatar.jpg" width="300" alt="" /></span>
+							<h1>Lior Rosenberg</h1>
+							<p>Junior Software Developer</p>
+						</header>
+
+						<!-- Include Font Awesome from CDN -->
+						<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+						<footer>
+							<ul class="icons">
+								<li><a href="https://www.linkedin.com/in/lior-rosenberg-b617aa245/" class="fa fa-linkedin"> LinkedIn</a></li>
+        						<li><a href="#" class="fa fa-phone" onclick="showPhoneNumber()"> Phone</a></li>
+       							<li><a href="/static/assets/My_CV.pdf" target="_blank"  id="cv-icon"></a></li>
+      						</ul>
+						</footer>
+					</section>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<ul class="copyright">
+							<li>&copy; Jane Doe</li>
+							<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						</ul>
+					</footer>
+
+			</div>
+
+
+			<!-- Scripts -->
+			<!--[if lte IE 8]><script src="static/assets/js/respond.min.js"></script><![endif]-->
+			<script>
+				if ('addEventListener' in window) {
+					window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-loading\b/, ''); });
+					document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
+				}
+				function showPhoneNumber() {alert("MY phone number for contact is: 050-710-7715");}
+			</script>
+
+			<style>
+				 /* Style the CV icon with the CVpho.png background image */
+				#cv-icon {
+					display: inline-block;
+					width: 56px; /* Use the existing width */
+					height: 56px; /* Use the existing height */
+					border-radius: 50%; /* Keeps it circular */
+					background-image: url('static/images/CVpho.png');
+					background-size: 60%; /* Adjusts the image size within the circle */
+					background-position: center;
+					background-repeat: no-repeat;
+					border: 1.3px solid #555; /* border thickness */
+					filter: brightness(2.5);
+				}
+
+			</style>
+	</body>
+</html>
